@@ -13,7 +13,7 @@ background-color: #f6b319;
 }
 
 #logo-img {
-  background: url('/Images/imgonline-com-ua-Resize-S2UVxkhdlerAIXMV.png') no-repeat;
+  background: url('../Images/imgonline-com-ua-Resize-S2UVxkhdlerAIXMV.png') no-repeat;
   width: 150px;
   height: 150px;
   margin: -10px 15px 10px 0;
@@ -22,7 +22,7 @@ background-color: #f6b319;
 
 #logo-img1{
 
-  background: url('/Images/imgonline-com-ua-Resize-S2UVxkhdlerAIXMV.png') no-repeat;
+  background: url('../Images/imgonline-com-ua-Resize-S2UVxkhdlerAIXMV.png') no-repeat;
   width: 200px;
   height: 200px;
 margin:  25px;
@@ -315,14 +315,14 @@ h3.menu-item-title {
 /**** Large Devices only ***/
 @media (min-width: 1200px){
   .container .jumbotron{
-  background: url('/Images/Main\ 1200\ width.jpg') no-repeat;
+  background: url('../Images/Main\ 1200\ width.jpg') no-repeat;
 height: 675px;
 box-shadow: 0 0 50px #3f0c1f;
 border: 2px solid #3f0c1f;
 }
 
 #logo-img1{
-background: url('/Images/imgonline-com-ua-Resize-S2UVxkhdlerAIXMV.png') no-repeat;
+background: url('../Images/imgonline-com-ua-Resize-S2UVxkhdlerAIXMV.png') no-repeat;
 width: 200px;
 height: 200px;
 margin:  50px;}
@@ -344,7 +344,7 @@ margin: 5px 5px 5px 0;
 /* End Header */
 
 .container .jumbotron{
-background: url('/Images/main\ 992\ width.jpg') no-repeat;
+background: url('../Images/main\ 992\ width.jpg') no-repeat;
 height: 558px;
 box-shadow: 0 0 50px #3f0c1f;
 border: 2px solid #3f0c1f;
@@ -355,7 +355,7 @@ border: 2px solid #3f0c1f;
 /*** Small Devices only ***/
 @media (min-width: 768px) and (max-width: 991px) {
   .container .jumbotron{
-  background: url('/Images/main\ 868\ width.jpg') no-repeat;
+  background: url('../Images/main\ 868\ width.jpg') no-repeat;
 height: 432px;
 box-shadow: 0 0 50px #3f0c1f;
 border: 2px solid #3f0c1f;
@@ -386,7 +386,7 @@ height: 20px;
 
 #logo-img1{
   
-  background: url('/Images/imgonline-com-ua-Resize-S2UVxkhdlerAIXMV.png') no-repeat;
+  background: url('../Images/imgonline-com-ua-Resize-S2UVxkhdlerAIXMV.png') no-repeat;
  
  display: block;
  margin-left: auto;
