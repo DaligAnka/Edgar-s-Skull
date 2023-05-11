@@ -1,0 +1,486 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #61122f;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/* HEADER */
+#header-nav {
+background-color: #f6b319;
+ border-radius: 0;
+ border: 0; 
+}
+
+#logo-img {
+  background: url('/Images/imgonline-com-ua-Resize-S2UVxkhdlerAIXMV.png') no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: -10px 15px 10px 0;
+
+} 
+
+#logo-img1{
+
+  background: url('/Images/imgonline-com-ua-Resize-S2UVxkhdlerAIXMV.png') no-repeat;
+  width: 200px;
+  height: 200px;
+margin:  25px;
+
+}
+
+.navbar-brand{
+  padding-top: 25px;
+}
+
+.navbar-brand h1{ /*Restaurant name */
+  font-family: 'Lora', serif;
+  color: hsla(123, 85%, 21%, 0.5);
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus{
+  text-decoration: none;
+} 
+.navbar-brand p{ /* Michelin star */
+color: #000;
+text-transform: uppercase;
+font-size: .7em;
+margin-top: 15px;
+}
+.navbar-brand p span { /* star */
+  vertical-align: middle;
+}
+
+#nav-list{
+  margin-top: 10px;
+}
+#nav-list a {
+color: #951c49;
+text-align: center;
+}
+#nav-list a:hover {
+  background: #e7e7e7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+#phone {
+  margin-top: 5px;
+}
+#phone a { /* Phone number */
+text-align: right;
+padding-bottom: 0;
+}
+#phone div { /* We Deliver*/
+color:#d80fbd ;
+text-align: right;
+padding-right: 15px;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle{
+  clear: both;
+  margin-top: -30px;
+}
+
+/* End header*/
+
+/* Footer */
+.panel-footer{
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+}
+.panel-footer div.row{
+margin-bottom: 35px;
+}
+#hours, #address {
+text-align: center;
+  line-height: 2;
+}
+#hours > span, #address > span {
+  font-size: 1.3em;
+}
+
+#address p{
+ color: #557c3e;
+  font-size: .8em;
+  line-height: 1.8;
+}
+#address p:nth-child(6) {
+  color: #f70c0c;
+   font-size:  1.1em;
+ }
+#testimonials >p {
+  font-style: italic;
+}
+#testimonials p:nth-child(2){
+  margin-top: 25px;
+}
+
+
+/*  i use reverse flexbox to take advantage of flex-direction: reverse */
+.star-rating {
+  display: flex;
+  align-items: center;
+  width: 160px;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin: auto 0px 0px auto;
+  position: relative;
+}
+/* hide the inputs */
+.star-rating input {
+  display: none;
+}
+/* set properties of all labels */
+.star-rating > label {
+  width: 30px;
+  height: 30px;
+  font-family: Arial;
+  font-size: 30px;
+  transition: 0.2s ease;
+  color: #f6b319;
+}
+/* give label a hover state */
+.star-rating label:hover {
+  color: #ff69b4;
+  transition: 0.2s ease;
+}
+.star-rating label:active::before {
+  transform:scale(1.1);
+}
+
+/* set shape of unselected label */
+.star-rating label::before {
+  content: '\2606';
+  position: absolute;
+  top: 0px;
+  line-height: 26px;
+}
+/* set full star shape for checked label and those that come after it */
+.star-rating input:checked ~ label:before {
+  content:'\2605';
+}
+
+@-moz-document url-prefix() {
+  .star-rating input:checked ~ label:before {
+  font-size: 36px;
+  line-height: 21px;
+  }
+}
+
+/* End Footer */
+
+ 
+.container .jumbotron{
+  box-shadow: 0 0 50px #3f0c1f;
+border: 2px solid #3f0c1f;
+}
+
+#menu-tile, #specials-tile, #map-tile{
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3f0c1f;
+  overflow: hidden;
+}
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover{
+  box-shadow: 5px 3px 5px 2px #c21515;
+}
+
+#menu-tile {
+
+  background: url('../Images/sider\ menu\ 360x540.jpg') no-repeat;
+ background-position: center;
+}
+#specials-tile {
+  background: url('../Images/cupcake\ \ 360~.jpg') no-repeat;
+  background-position: center;
+}
+
+#menu-tile span, #specials-tile span , #map-tile span{
+position: absolute;
+bottom: 10;
+right: 5;
+width: 50%;
+text-align: center;
+font-size: 1.5em;
+text-transform: uppercase;
+background-color: #0d1101;
+color: #ffffff;
+opacity: 0.9;
+}
+
+/* menu categories page */
+.category-tile {
+  position: relative;
+  border: 2px solid #3f0c1f;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;
+}
+
+.category-tile span{
+ position: absolute;
+ bottom: 87%;
+ right: 0;
+ width: 100%;
+ text-align: center;
+ font-size: 1.1em;
+ text-transform: uppercase;
+ background-color: #0d1101;
+ color: #ffffff;
+ opacity: 0.8;
+}
+
+.category-tile:hover {
+  box-shadow: 5px 3px 5px 2px #c21515;;
+}
+
+#menu-categories-title + div {
+  margin-bottom: 50px;
+}
+
+/* end menu categories page*/
+
+/* Single category page */
+
+.menu-item-tile{
+  margin-bottom: 25px;
+}
+.menu-item-tile hr{
+  width: 80%;
+}
+.menu-item-tile .menu-item-price {
+  font-size: 1.1em;
+  text-align: right;
+  margin-top: -15px;
+  margin-right: -15px;
+}
+.menu-item-tile .menu-item-price span {
+  font-size: .6em;
+}
+
+.menu-item-photo {
+  position: relative;
+  border: 2px solid #3f0c1f;
+overflow: hidden;
+padding: 0;
+margin-right: -15px;
+margin-left: auto;
+margin-bottom: 20px;
+max-width: 250px;
+}
+.menu-item-photo div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  background-color: #557c3e;
+  text-align: center;
+}
+.menu-item-description {
+  padding-right: 30px;
+}
+h3.menu-item-title {
+ margin: 0 0 10px;
+}
+.menu-item-details {
+  font-size: .9em;
+  font-style: italic;
+}
+.menu-item-details :nth-child(1){
+  color: #f6b319;
+  font-style: normal;
+}
+
+/* end single category page*/
+
+
+
+
+
+/**** Large Devices only ***/
+@media (min-width: 1200px){
+  .container .jumbotron{
+  background: url('/Images/Main\ 1200\ width.jpg') no-repeat;
+height: 675px;
+box-shadow: 0 0 50px #3f0c1f;
+border: 2px solid #3f0c1f;
+}
+
+#logo-img1{
+background: url('/Images/imgonline-com-ua-Resize-S2UVxkhdlerAIXMV.png') no-repeat;
+width: 200px;
+height: 200px;
+margin:  50px;}
+
+
+
+}
+
+/*** Medium Devices only ***/
+@media (min-width: 992px ) and (max-width:1199px){
+/* Header */
+/* #logo-img {
+  background: url(/Images/imgonline-com-ua-Resize-S2UVxkhdlerAIXMV.png) no-repeat;
+width: 100px;
+height: 100px;
+margin: 5px 5px 5px 0;
+} */
+
+/* End Header */
+
+.container .jumbotron{
+background: url('/Images/main\ 992\ width.jpg') no-repeat;
+height: 558px;
+box-shadow: 0 0 50px #3f0c1f;
+border: 2px solid #3f0c1f;
+}
+}
+
+
+/*** Small Devices only ***/
+@media (min-width: 768px) and (max-width: 991px) {
+  .container .jumbotron{
+  background: url('/Images/main\ 868\ width.jpg') no-repeat;
+height: 432px;
+box-shadow: 0 0 50px #3f0c1f;
+border: 2px solid #3f0c1f;
+}
+
+}
+
+
+/*** Extra small devices only ***/
+@media (max-width: 767px) {
+/* Header*/
+.navbar-brand {
+  padding-top: 10px;
+  height: 80px;
+}
+.navbar-brand h1 { /* Restaurants name */
+padding-top: 10px;
+font-size: 1.5em;
+}
+.navbar-brand p { /* Michelin */
+font-size: .6em;
+margin-top: 12px;
+}
+.navbar-brand p img { /* star */
+height: 20px;
+}
+
+
+#logo-img1{
+  
+  background: url('/Images/imgonline-com-ua-Resize-S2UVxkhdlerAIXMV.png') no-repeat;
+ 
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+height: 150px;
+width: 150px;
+}
+  
+
+
+#collapsable-nav a { /* Collapsed nav menu glyph */
+  font-size: 1.2em;
+}
+#collapsable-nav a span {
+font-size: 1em;
+margin-right: 5px;
+}
+
+#call-btn > a {
+  font-size: 1.5em;
+  display: block;
+  margin: 0 20px;
+  padding: 10px;
+  border: 2px solid #fff;
+  background-color: #f6b319;
+  color: #951c49;
+}
+#xs-deliver{
+  color:#d80fbd ;
+margin-top: 5px;
+font-size: .9em;
+letter-spacing: .1em;
+text-transform: uppercase;
+}
+
+/* Footer */
+.panel-footer section {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.panel-footer section:nth-child(3) {
+  margin-bottom: 0; /* Margin already exists on the while row*/
+}
+.panel-footer section hr{
+  width: 50%;
+}
+/* end footer */
+
+.container .jumbotron{
+  margin-top: 30px;
+  padding: 0;
+  box-shadow: 0 0 50px #3f0c1f;
+  border: 2px solid #3f0c1f;
+}
+
+#menu-tile, #specials-tile {
+  width: 360px;
+  margin: 0 auto 15px;
+}
+
+/* Start single category */
+
+.menu-item-photo{
+  margin-right: auto;
+}
+.menu-item-tile .menu-item-price{
+  text-align: center;
+}
+.menu-item-description{
+  text-align: center;
+}
+}
+
+/* end single category*/
+
+/**** Super extra small devices only ****/
+@media (max-width: 479px) {
+
+/* header */
+.navbar-brand h1{  /* Restaurants name*/
+  padding-top: 5px;
+  font-size: 7vw;
+}
+
+  #menu-tile, #specials-tile{
+    width: 286px;
+    margin: 0 auto 15px;
+  }
+  .col-xxs-12 {
+position: relative;
+min-height: 1px;
+padding-right: 15px;
+padding-left: 15px;
+float: left;
+width: 100%;
+  }
+}
